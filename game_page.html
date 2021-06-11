@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Quiz</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+    h1{
+        color: cornflowerblue;
+        text-align: center;
+    }
+    #output{
+background-color: rgba(220, 20, 60, 0.685);
+border-radius: 10px;
+border-top: 10px solid slategray;
+padding: 10px;
+float: none;
+text-align: left;
+width: 800px;
+    }
+    body{
+        background-color: thistle;
+        font-family:'Lucida Grande';
+    }
+    #mmss{
+        color: violet;
+        border-radius: 10px;
+border-top: 10px solid slateblue;
+padding: 10px;
+float: none;
+align-self: center;
+width: 800px;
+    }
+    </style>
+    <body>
+        <h4 id="player1_name"></h4> <span id="player1_Score"></span>
+        <br>
+        <h4 id="player2_name"></h4> <span id="player2_Score"></span>
+        <h1>Math Quiz!</h1>
+        <center>
+        <div class="container" id="mmss">
+	<center>
+		<h3 id="answer_turn"></h3>
+        <h3 id="question_turn"></h3>
+        </center>
+        </div>
+    </center>
+        <div id="output">
+<label id="answer"></label>
+<span>
+<label>Answer:</label><input placeholder="Type Your Answer Here!">
+</span>
+<button id="cheque" onclick="Check1()">Check</button>
+        </div>
+        <center>
+   <h4>Number 1</h4>
+   <input>
+   <h4>Number 2</h4>
+   <input>
+   <div>   
+       <button id="Sned" onclick="Send()">Send</button>
+</center>
+</div>
+  </body>
